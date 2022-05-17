@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form  id="form">
+        <div id="header-border">Form</div>
+        <div id="position">
+            <div  id="center-div-left">
+            <label for="description-text">Description</label>
+            </div>
+            <div id="center-div-right">
+                <textarea type="text" id="description-text"  onkeyup="checkText()"></textarea>
+                <div id="description-error"></div>   
+                <div id="characters-limit"></div>   
+            </div>
+            <div id="center-div-left">
+            <label>Send confirmation</label>
+            </div>
+            <div id="center-div-right" >
+            <div name="myform">
+                <input id="yes" type="radio" name="confirm" value="yes">
+                <label for="yes" style="font-size:17px">yes</label>
+                <input id="no" type="radio" name="confirm" value="no">
+                <label for="no" style="font-size:17px">no</label>
+                <p id="confirm-error"></p>
+            </div>
+            </div>
+            <div id="center-div-left">
+            <label for="vat">Price</label>
+            </div>
+            <div id="center-div-right" name="vat-fieldset" onkeyup="valueNetto()">
+                <select name="vat-select" id="vat" oninput="taxValue()">
+                    <option value="" name="vat">--Please choose an option--</option>
+                    <option value="19" name="vat">19%</option>
+                    <option value="21" name="vat">21%</option>
+                    <option value="23" name="vat">23%</option>
+                    <option value="25" name="vat">25%</option>
+                </select>
+                <label id="netto-brutto-position" for="price-netto">Price netto EUR</label>
+                <input id="price-netto"  disabled>
+                <label id="net-validate"></label>
+                <p id="price-netto-error"></p>
+                <label id="netto-brutto-position" for="price-brutto">Price brutto EUR</label>
+                <input id="price-brutto" disabled>
+            </div>
+            <button id="send">Send</button>
+        </div>
+    </form>
+    <div style="visibility: hidden" id="status-message"></div>
+</body>
+<script src="main.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

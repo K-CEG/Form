@@ -1,0 +1,96 @@
+body{
+    margin:0px;
+}
+#form{
+    position:absolute;
+    margin-left:30vw;
+    margin-top: 10%;
+    width: 40vw;
+    height:55vh;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    border-top:0px;
+    background-color: darkgray;
+}
+#position{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 120px 100px 220px ;
+    text-align: center;
+    grid-row: auto; 
+    align-items: stretch; 
+    justify-items: stretch;
+}
+#send{
+    width:40vw;
+    height:40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px black solid;
+}
+#status-message{
+    position:absolute;
+    background-color: green;
+    height: 15%;
+    width: 30vw;
+    margin-top: 20vw;
+    margin-left:35vw;
+    display:grid;
+    text-align: center;
+    align-items: center;
+}
+#center-div-left{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    border-top:unset;
+    font-weight: 700;
+    border: 1px black solid;
+    border-bottom: 0px;
+}
+#center-div-right{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    border-top:unset;
+    font-weight: 700;
+    border: 1px black solid;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+#header-border{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content: center;
+    font-size:23px;
+    height:45px;
+    border: 1px black solid;
+    border-bottom: 0px;
+    font-weight: 900;
+}
+#center-textfield{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    border-left: 0px;
+    border-bottom:0px;
+}
+#description-text{
+    width:250px;
+}
+#description-error, #confirm-error, #price-netto-error{
+    color:red;
+}
+#description-error{
+    margin:10px 0px 10px 0px;
+}
+#confirm-error, #price-netto-error{
+    margin:10px 0px 0px 0px;
+}
+#netto-brutto-position{
+    margin: 10px 0px 5px 0px;
+}
